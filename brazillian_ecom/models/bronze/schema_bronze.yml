@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: brazillian_ecom
+    tables:
+      - name: olist_order_items
+        external:
+          location: '/mnt/dbt-databricks/warehouse/olist_order_items_dataset.delta/'
+          using: delta
+        columns:
+          - name: order_id
+            data_type: string
+          - name: order_item_id
+            data_type: string
+          - name: product_id
+            data_type: string
+          - name: seller_id
+            data_type: string
+          - name: shipping_limit_date
+            data_type: string
+          - name: price
+            data_type: string
+          - name: freight_value
+            data_type: string
+
+
+
+
+            

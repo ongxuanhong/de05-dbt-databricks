@@ -1,0 +1,11 @@
+brazillian_ecom:
+  outputs:
+    dev:
+      catalog: null
+      host: adb-your-host-name.azuredatabricks.net
+      http_path: sql/protocolv1/o/your-host-name/1111-111111-abz234ha
+      schema: brazillian_ecom
+      threads: 1
+      token: 123456789abcdefghijklmnopqrstuvwxyz
+      type: databricks
+  target: dev
