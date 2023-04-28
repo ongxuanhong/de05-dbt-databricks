@@ -40,7 +40,7 @@ Happy modeling!
 
 dbt run --profiles-dir ./ --project-dir brazillian_ecom 
 
-``bash
+```bash
 # outputs
 
 21:31:49  Running with dbt=1.4.6
