@@ -14,7 +14,8 @@ WITH daily_sales_products AS (
 ), daily_sales_categories AS (
   SELECT
     ts.daily
-    , DATE_FORMAT(ts.daily, 'y-MM') AS monthly
+    -- , DATE_FORMAT(ts.daily, 'y-MM') AS monthly
+    , strftime('%y-%m', ts.daily) AS monthly
     , p.product_category_name_english AS category
     , ts.sales
     , ts.bills

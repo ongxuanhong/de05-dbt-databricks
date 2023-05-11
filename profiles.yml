@@ -1,5 +1,14 @@
 brazillian_ecom:
   outputs:
+    laptop:
+      type: sqlite
+      threads: 1
+      database: dbt_databricks
+      schema: 'main'
+      schemas_and_paths:
+        main: '../data/dbt_databricks'
+      schema_directory: '../data'
+
     dev:
       catalog: null
       host: adb-your-host-name.azuredatabricks.net
@@ -8,4 +17,4 @@ brazillian_ecom:
       threads: 1
       token: 123456789abcdefghijklmnopqrstuvwxyz
       type: databricks
-  target: dev
+  target: laptop
